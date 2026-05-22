@@ -1142,3 +1142,48 @@ button { cursor: pointer; background: none; border: none; }
 .range-card:nth-child(2) .range-img-wrap { background: linear-gradient(135deg, #c06080, #8a3050); }
 .range-card:nth-child(3) .range-img-wrap { background: linear-gradient(135deg, #5a7a3a, #2e5020); }
 .range-card:nth-child(4) .range-img-wrap { background: linear-gradient(135deg, #7a5a8a, #4a3060); }
+
+/* ── HTML Logo (replaces SVG text) ── */
+.logo-html {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.logo-text-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 3px;
+}
+
+.logo-name {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.logo-sub {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.48rem;
+  font-weight: 500;
+  color: #a8d5b0;
+  letter-spacing: 0.18em;
+  white-space: nowrap;
+}
+
+/* On light background (if header is light) */
+.header.scrolled .logo-name,
+[data-theme="light"] .header:not(.scrolled) .logo-name {
+  color: var(--color-primary, #2e6b3e);
+}
