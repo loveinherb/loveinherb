@@ -1133,3 +1133,12 @@ button { cursor: pointer; background: none; border: none; }
     grid-template-columns: 1fr;
   }
 }
+
+/* Image fallback backgrounds if images don't load */
+.range-img-wrap {
+  background: linear-gradient(135deg, #2e6b3e 0%, #1a4a28 100%);
+}
+.range-card:nth-child(1) .range-img-wrap { background: linear-gradient(135deg, #3a7a4a, #1a4a28); }
+.range-card:nth-child(2) .range-img-wrap { background: linear-gradient(135deg, #c06080, #8a3050); }
+.range-card:nth-child(3) .range-img-wrap { background: linear-gradient(135deg, #5a7a3a, #2e5020); }
+.range-card:nth-child(4) .range-img-wrap { background: linear-gradient(135deg, #7a5a8a, #4a3060); }
