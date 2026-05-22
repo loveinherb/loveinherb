@@ -292,7 +292,7 @@ button { cursor: pointer; background: none; border: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 68px;
+  height: 80px;
   gap: var(--space-8);
 }
 
