@@ -14,14 +14,7 @@
   <header class="header" id="header">
     <nav class="nav container">
       <a href="index.html" class="logo" aria-label="LoveinHerb home">
-        <svg viewBox="0 0 160 44" fill="none" width="150" height="40">
-          <path d="M18 38 Q14 26 16 14" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" fill="none"/>
-          <path d="M16 22 Q8 18 10 10 Q18 12 16 22Z" fill="var(--color-primary)" opacity="0.85"/>
-          <path d="M16 28 Q24 22 26 14 Q18 16 16 28Z" fill="var(--color-primary-light)" opacity="0.7"/>
-          <path d="M16 14 C16 11 14 9 12 10 C10 11 10 14 13 16 L16 18 L19 16 C22 14 22 11 20 10 C18 9 16 11 16 14Z" fill="var(--color-accent-warm)"/>
-          <text x="34" y="22" font-family="'Zodiak',Georgia,serif" font-size="15" font-weight="700" fill="var(--color-primary)">LoveinHerb</text>
-          <text x="34" y="35" font-family="'Work Sans',sans-serif" font-size="7.5" font-weight="500" letter-spacing="0.12em" fill="var(--color-text-muted)">NATURAL WELLNESS</text>
-        </svg>
+        <img src="images/logo.jpg" alt="LoveinHerb" style="height:44px;width:auto;border-radius:4px;"/>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="#product">Product</a></li>
@@ -84,42 +77,77 @@
     <!-- PRODUCT -->
     <section class="section product-section" id="product">
       <div class="container">
-        <div class="product-grid">
-          <div class="product-visual">
-            <div class="product-card">
-              <svg viewBox="0 0 200 260" fill="none" class="product-svg">
-                <rect x="30" y="30" width="140" height="190" rx="14" fill="var(--color-primary)" opacity="0.9"/>
-                <rect x="38" y="38" width="124" height="174" rx="10" fill="var(--color-primary-dark)" opacity="0.3"/>
-                <rect x="30" y="20" width="140" height="22" rx="6" fill="var(--color-primary-dark)"/>
-                <rect x="30" y="218" width="140" height="22" rx="6" fill="var(--color-primary-dark)"/>
-                <g transform="translate(70,55) scale(0.75)">
-                  <path d="M40 120 Q20 80 25 30 Q50 15 60 55 Q65 85 40 120Z" fill="white" opacity="0.35"/>
-                  <path d="M40 120 Q60 80 55 30 Q30 15 20 55 Q15 85 40 120Z" fill="white" opacity="0.25"/>
-                  <line x1="40" y1="120" x2="40" y2="20" stroke="white" stroke-width="2" opacity="0.5"/>
-                </g>
-                <text x="100" y="170" text-anchor="middle" font-family="serif" font-size="16" font-weight="700" fill="white">WelCumn 365</text>
-                <text x="100" y="188" text-anchor="middle" font-family="sans-serif" font-size="8" fill="white" opacity="0.8" letter-spacing="2">HERBAL WATER MIX</text>
-                <text x="100" y="208" text-anchor="middle" font-family="sans-serif" font-size="7" fill="white" opacity="0.6">LoveinHerb</text>
-              </svg>
-              <div class="product-glow"></div>
+        <div class="section-header centered" style="margin-bottom:2.5rem">
+          <p class="section-eyebrow">Our Products</p>
+          <h2 class="section-title">Natural Herbal Wellness Range</h2>
+          <p style="color:var(--color-text-muted);max-width:520px;margin:0 auto;">Each product is a non-medicinal drinking water mix crafted with 7 natural herbs. 100% natural, no preservatives, FSSAI certified.</p>
+        </div>
+        <div class="products-range-grid">
+
+          <!-- WelCumn 365 -->
+          <div class="range-card reveal">
+            <div class="range-img-wrap">
+              <img src="images/ingredients.jpg" alt="WelCumn 365" class="range-img"/>
             </div>
-            <div class="product-meta-pill">
-              <span>Family Pack</span><span class="pill-dot"></span><span>30 sachets × 3g</span>
+            <div class="range-body">
+              <h3 class="range-name">WelCumn 365</h3>
+              <p class="range-tag">Daily Wellness</p>
+              <p class="range-desc">Transform 3 litres of plain water into a herbal wellness drink. Supports daily hydration and vitality with Fennel, Cumin, Tribulus and more.</p>
+              <ul class="range-ingredients">
+                <li>Fennel Seeds</li><li>Cumin Seeds</li><li>Tribulus Terrestris</li><li>Aerva Lanata</li><li>Trianthema Decandra</li>
+              </ul>
+              <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20WelCumn%20365" target="_blank" class="btn btn-whatsapp">💬 Order on WhatsApp</a>
             </div>
           </div>
-          <div class="product-copy reveal">
-            <p class="section-eyebrow">Our Flagship Product</p>
-            <h2 class="section-title">WelCumn 365</h2>
-            <p class="section-subtitle">Herbal non-medicinal drinking water mix</p>
-            <p class="product-desc">One sachet transforms 3 litres of plain water into a herbal wellness drink — naturally refreshing, gentle on the body, crafted to support your daily hydration ritual.</p>
-            <ul class="product-feature-list" role="list">
-              <li><div class="feat-icon">✓</div><span>100% Natural herbs — no synthetics</span></li>
-              <li><div class="feat-icon">✓</div><span>No preservatives or artificial additives</span></li>
-              <li><div class="feat-icon">✓</div><span>Family Pack — 30 sachets of 3g each</span></li>
-              <li><div class="feat-icon">✓</div><span>FSSAI Approved · Made in India</span></li>
-            </ul>
-            <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20WelCumn%20365" target="_blank" class="btn btn-whatsapp btn-lg">💬 Order on WhatsApp</a>
+
+          <!-- WelAsoca -->
+          <div class="range-card reveal">
+            <div class="range-img-wrap">
+              <img src="images/welasoca.jpg" alt="WelAsoca" class="range-img"/>
+            </div>
+            <div class="range-body">
+              <h3 class="range-name">WelAsoca</h3>
+              <p class="range-tag">For Female Wellness</p>
+              <p class="range-desc">A gentle herbal blend crafted to support women's health, promote hormonal balance and maintain uterine wellness naturally.</p>
+              <ul class="range-ingredients">
+                <li>Asoca Bark</li><li>Cumin Seeds</li><li>Horse Purslane Root</li><li>Cuscus Root</li><li>Dry Ginger</li><li>Mountain Knotgrass</li><li>Puncture Vine</li>
+              </ul>
+              <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20WelAsoca" target="_blank" class="btn btn-whatsapp">💬 Order on WhatsApp</a>
+            </div>
           </div>
+
+          <!-- WelWagandha -->
+          <div class="range-card reveal">
+            <div class="range-img-wrap">
+              <img src="images/welwagandha.jpg" alt="WelWagandha" class="range-img"/>
+            </div>
+            <div class="range-body">
+              <h3 class="range-name">WelWagandha</h3>
+              <p class="range-tag">Strength · Balance · Vitality</p>
+              <p class="range-desc">Powered by Ashwagandha roots to help the body adapt to stress, support strength and stamina. Daily wellness in every sip.</p>
+              <ul class="range-ingredients">
+                <li>Ashwagandha Roots</li><li>Cumin Seeds</li><li>Horse Purslane Root</li><li>Cuscus Root</li><li>Dry Ginger</li><li>Mountain Knotgrass</li><li>Puncture Vine</li>
+              </ul>
+              <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20WelWagandha" target="_blank" class="btn btn-whatsapp">💬 Order on WhatsApp</a>
+            </div>
+          </div>
+
+          <!-- Wel Dia Berry -->
+          <div class="range-card reveal">
+            <div class="range-img-wrap">
+              <img src="images/weldiaberry.jpg" alt="Wel Dia Berry" class="range-img"/>
+            </div>
+            <div class="range-body">
+              <h3 class="range-name">Wel Dia Berry</h3>
+              <p class="range-tag">Antioxidant Wellness</p>
+              <p class="range-desc">Indian Blackberry Seeds bring powerful antioxidant properties. Supports digestion, immunity and overall wellness naturally.</p>
+              <ul class="range-ingredients">
+                <li>Cumin Seeds</li><li>Horse Purslane Root</li><li>Cuscus Root</li><li>Indian Blackberry Seeds</li><li>Dry Ginger</li><li>Mountain Knotgrass</li><li>Puncture Vine</li>
+              </ul>
+              <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20Wel%20Dia%20Berry" target="_blank" class="btn btn-whatsapp">💬 Order on WhatsApp</a>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -187,8 +215,9 @@
             <h2 class="section-title">Order WelCumn 365</h2>
             <p>Order directly on WhatsApp or send us a message. Share your review on WhatsApp and win a cashback offer!</p>
             <div class="contact-details">
-              <div class="contact-item"><span>📞</span><div><strong>Customer Care</strong><a href="tel:+919443059268">+91 9443059268</a></div></div>
-              <div class="contact-item"><span>📍</span><div><strong>Address</strong><span>892/13 NH 544, Kanjikode, Kerala 678621</span></div></div>
+              <div class="contact-item"><span>📞</span><div><strong>Customer Care</strong><a href="tel:+919443059268">+91 94430 59268</a></div></div>
+              <div class="contact-item"><span>✉️</span><div><strong>Email</strong><a href="mailto:care@loveinherb.com">care@loveinherb.com</a></div></div>
+              <div class="contact-item"><span>📍</span><div><strong>Address</strong><span>13/892 NH 544, Kanjikode, Palakkad, Kerala 678 621</span></div></div>
               <div class="contact-item"><span>💬</span><div><strong>WhatsApp Review</strong><span>Send a review &amp; win cashback!</span></div></div>
             </div>
             <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20WelCumn%20365" target="_blank" class="btn btn-whatsapp btn-lg" style="margin-top:1.5rem">
@@ -236,8 +265,9 @@
         </ul></nav>
       </div>
       <div class="footer-info">
-        <p>892/13 NH 544, Kanjikode, Kerala 678621</p>
-        <p><a href="tel:+919443059268">+91 9443059268</a></p>
+        <p>13/892 NH 544, Kanjikode, Palakkad, Kerala 678 621</p>
+        <p><a href="tel:+919443059268">+91 94430 59268</a></p>
+        <p><a href="mailto:care@loveinherb.com">care@loveinherb.com</a></p>
         <p class="footer-fssai">FSSAI Certified · Made in India</p>
       </div>
     </div>

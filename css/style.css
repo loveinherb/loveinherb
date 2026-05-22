@@ -1029,3 +1029,107 @@ button { cursor: pointer; background: none; border: none; }
 .footer-fssai { color:#7dd4a0 !important;font-size:.75rem !important;letter-spacing:.06em;margin-top:.75rem; }
 .footer-bottom { border-top:1px solid rgba(255,255,255,.12);padding-block:1.5rem; }
 .footer-bottom p { font-size:.75rem;color:rgba(255,255,255,.4);max-width:100%; }
+
+/* ── Products Range Grid ── */
+.products-range-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.range-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.range-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(46,107,62,0.15);
+}
+
+.range-img-wrap {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.range-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.4s ease;
+}
+
+.range-card:hover .range-img {
+  transform: scale(1.04);
+}
+
+.range-body {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.range-name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+}
+
+.range-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-warm);
+  margin-bottom: 0.8rem;
+}
+
+.range-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.range-ingredients {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.range-ingredients li {
+  background: var(--color-bg-alt, #f0f5f1);
+  color: var(--color-primary);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(46,107,62,0.2);
+}
+
+.range-card .btn {
+  margin-top: auto;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .products-range-grid {
+    grid-template-columns: 1fr;
+  }
+}
