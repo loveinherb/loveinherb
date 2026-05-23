@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loveinherb.github.io/loveinherb/sitemap.xml
