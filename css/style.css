@@ -1213,9 +1213,37 @@ button { cursor: pointer; background: none; border: none; }
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: #ffffff;
   padding: 16px;
   border-bottom: 1px solid var(--color-divider);
+  position: relative;
+}
+
+/* Individual attractive backgrounds for each product */
+.range-card:nth-child(1) .range-img-wrap {
+  background: linear-gradient(135deg, #f6eedc 0%, #efe4c9 55%, #e6f0de 100%);
+}
+
+.range-card:nth-child(2) .range-img-wrap {
+  background: linear-gradient(135deg, #fde8ee 0%, #f8d7e2 55%, #f3c8d8 100%);
+}
+
+.range-card:nth-child(3) .range-img-wrap {
+  background: linear-gradient(135deg, #eef1df 0%, #dde7c8 55%, #cedbb3 100%);
+}
+
+.range-card:nth-child(4) .range-img-wrap {
+  background: linear-gradient(135deg, #f3eedf 0%, #eee3ef 55%, #e3d6ef 100%);
+}
+
+/* Soft glow behind the pack */
+.range-img-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 18% 16%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  filter: blur(26px);
+  z-index: 0;
 }
 
 .range-img {
@@ -1224,10 +1252,19 @@ button { cursor: pointer; background: none; border: none; }
   object-fit: contain;
   object-position: center;
   transition: transform 0.35s ease;
+  position: relative;
+  z-index: 1;
 }
 
 .range-card:hover .range-img {
   transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .range-img-wrap {
+    height: 260px;
+    padding: 12px;
+  }
 }
 
 .range-body {
