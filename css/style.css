@@ -1055,16 +1055,20 @@ button { cursor: pointer; background: none; border: none; }
 
 .range-img-wrap {
   width: 100%;
-  height: 220px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
+  background: #fff;
+  padding: 12px;
 }
 
 .range-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center top;
-  transition: transform 0.4s ease;
+  object-fit: contain;
+  object-position: center;
 }
 
 .range-card:hover .range-img {
