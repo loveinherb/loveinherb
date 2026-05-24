@@ -1380,3 +1380,42 @@ button { cursor: pointer; background: none; border: none; }
 [data-theme="light"] .header:not(.scrolled) .logo-name {
   color: var(--color-primary, #2e6b3e);
 }
+
+/* ── Keep footer and CTA colors same in dark mode as light mode ── */
+[data-theme='dark'] .cta-banner {
+  background: #62be80;
+}
+
+[data-theme='dark'] .cta-banner h2 {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .cta-banner p {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+[data-theme='dark'] .footer {
+  background: #cfd8c8;
+  color: #1e2d1a;
+}
+
+[data-theme='dark'] .footer-tagline,
+[data-theme='dark'] .footer-links a,
+[data-theme='dark'] .footer-info p,
+[data-theme='dark'] .footer-info a,
+[data-theme='dark'] .footer-bottom p {
+  color: rgba(30, 45, 26, 0.78) !important;
+}
+
+[data-theme='dark'] .footer-links a:hover,
+[data-theme='dark'] .footer-info a:hover {
+  color: #1e2d1a !important;
+}
+
+[data-theme='dark'] .footer-bottom {
+  border-top: 1px solid rgba(30, 45, 26, 0.12);
+}
+
+[data-theme='dark'] .footer-fssai {
+  color: #4d9960 !important;
+}
