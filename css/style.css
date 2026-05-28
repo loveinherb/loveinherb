@@ -1387,8 +1387,8 @@ button {
 .featured-card .btn-whatsapp,
 .featured-card .order-btn {
   margin-top: auto;
-  width: auto;
-  min-width: 0;
+  width: fit-content;
+  min-width: 190px;
   align-self: flex-start;
   justify-content: center;
   text-align: center;
