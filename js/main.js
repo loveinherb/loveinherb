@@ -1,9 +1,8 @@
 /* ============================================================
    LoveinHerb — main.js
    Dark mode toggle, sticky header, mobile nav, scroll reveals,
-   nav highlighting, WhatsApp share, order form handler, image viewer
+   nav highlighting, WhatsApp share, form handler, image viewer
    ============================================================ */
-
 
 /* ── Dark mode ──────────────────────────────────────────────── */
 (function () {
@@ -32,7 +31,6 @@
   }
 })();
 
-
 /* ── Sticky header scroll effect ────────────────────────────── */
 (function () {
   const header = document.getElementById('header');
@@ -45,7 +43,6 @@
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
 })();
-
 
 /* ── Mobile navigation ──────────────────────────────────────── */
 (function () {
@@ -82,7 +79,6 @@
   });
 })();
 
-
 /* ── Scroll reveal ──────────────────────────────────────────── */
 (function () {
   const revealEls = document.querySelectorAll(
@@ -110,7 +106,6 @@
   revealEls.forEach(el => io.observe(el));
 })();
 
-
 /* ── Active nav link highlighting ───────────────────────────── */
 (function () {
   const sections = document.querySelectorAll('section[id]');
@@ -118,7 +113,6 @@
   const mobileLinks = document.querySelectorAll('.mobile-menu a[href^="#"]');
 
   if (!sections.length) return;
-  if (!('IntersectionObserver' in window)) return;
 
   function clearActive(links) {
     links.forEach(link => {
@@ -149,6 +143,8 @@
     }
   }
 
+  if (!('IntersectionObserver' in window)) return;
+
   const io = new IntersectionObserver((entries) => {
     const visible = entries
       .filter(entry => entry.isIntersecting)
@@ -165,7 +161,6 @@
 
   sections.forEach(section => io.observe(section));
 })();
-
 
 /* ── Share button ───────────────────────────────────────────── */
 (function () {
@@ -202,30 +197,6 @@
   });
 })();
 
-
-/* ── Product order helpers ──────────────────────────────────── */
-(function () {
-  const orderButtons = document.querySelectorAll('.order-btn');
-  const selectedProductInput = document.getElementById('selectedProduct');
-  const messageField = document.getElementById('message');
-
-  if (!orderButtons.length || !selectedProductInput) return;
-
-  orderButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const product = (btn.dataset.product || '').trim();
-      if (!product) return;
-
-      selectedProductInput.value = product;
-
-      if (messageField && !messageField.value.trim()) {
-        messageField.value = `I want to order ${product}. Please share details.`;
-      }
-    });
-  });
-})();
-
-
 /* ── Contact form ───────────────────────────────────────────── */
 (function () {
   const form = document.getElementById('contactForm');
@@ -239,39 +210,32 @@
     if (!btn) return;
 
     const originalText = btn.textContent;
-    const selectedProduct = (document.getElementById('selectedProduct')?.value || '').trim();
     const name = (document.getElementById('name')?.value || '').trim();
     const phone = (document.getElementById('phone')?.value || '').trim();
-    const email = (document.getElementById('email')?.value || '').trim();
     const message = (document.getElementById('message')?.value || '').trim();
 
-    let waText = 'Hi LoveinHerb, I want to place an order.';
-    if (selectedProduct) waText += `\nProduct: ${selectedProduct}`;
+    let waText = 'Hi LoveinHerb!';
     if (name) waText += `\nName: ${name}`;
     if (phone) waText += `\nPhone: ${phone}`;
-    if (email) waText += `\nEmail: ${email}`;
     if (message) waText += `\nMessage: ${message}`;
 
     btn.disabled = true;
     btn.textContent = 'Opening WhatsApp…';
 
     if (formMsg) {
-      formMsg.textContent = 'Preparing your order message...';
+      formMsg.textContent = 'Preparing your message...';
     }
 
     const waUrl = `https://wa.me/919443059268?text=${encodeURIComponent(waText)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
 
     setTimeout(() => {
-      btn.textContent = '✓ Ready in WhatsApp';
+      btn.textContent = '✓ Sent via WhatsApp!';
       btn.style.background = 'var(--color-primary-hover)';
       form.reset();
 
-      const hidden = document.getElementById('selectedProduct');
-      if (hidden) hidden.value = '';
-
       if (formMsg) {
-        formMsg.textContent = 'WhatsApp opened with your order details.';
+        formMsg.textContent = 'WhatsApp opened with your message.';
       }
 
       setTimeout(() => {
@@ -283,7 +247,6 @@
     }, 800);
   });
 })();
-
 
 /* ── Product image viewer ───────────────────────────────────── */
 (function () {
