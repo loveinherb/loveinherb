@@ -1281,13 +1281,16 @@ button {
 
 .featured-card {
   display: grid;
-  grid-template-columns: minmax(320px, 430px) 1fr;
+  grid-template-columns: 380px 1fr;
+  align-items: stretch;
   background: var(--color-surface-2);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-xl);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .featured-card:hover {
@@ -1297,15 +1300,16 @@ button {
 
 .featured-card .range-img-wrap {
   height: 100%;
-  min-height: 420px;
-  padding: 24px;
+  min-height: 320px;
+  max-height: 360px;
+  padding: 18px;
   border-bottom: none;
   border-right: 1px solid var(--color-divider);
   background: linear-gradient(135deg, #f6eedc 0%, #efe4c9 55%, #e6f0de 100%);
 }
 
 .featured-card .range-img-wrap::before {
-  inset: 16% 18%;
+  inset: 20% 18%;
 }
 
 .featured-card .range-img {
@@ -1315,35 +1319,36 @@ button {
 }
 
 .featured-card .range-body {
-  padding: 2rem;
+  padding: 1.5rem 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .featured-card .range-name {
-  font-size: clamp(1.8rem, 1.4rem + 1vw, 2.5rem);
-  margin-bottom: 0.35rem;
+  font-size: 1.9rem;
+  margin-bottom: 0.3rem;
 }
 
 .featured-card .range-tag {
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+  font-size: 0.82rem;
+  margin-bottom: 0.9rem;
 }
 
 .featured-card .range-desc {
-  font-size: 1rem;
-  line-height: 1.75;
-  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  max-width: 52ch;
 }
 
 .featured-card .range-ingredients {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .featured-card .btn {
   width: fit-content;
-  min-width: 220px;
+  min-width: 200px;
 }
 
 
@@ -1491,16 +1496,18 @@ button {
 @media (max-width: 900px) {
   .featured-card {
     grid-template-columns: 1fr;
+    max-width: 100%;
   }
 
   .featured-card .range-img-wrap {
-    min-height: 340px;
+    min-height: 260px;
+    max-height: 300px;
     border-right: none;
     border-bottom: 1px solid var(--color-divider);
   }
 
   .featured-card .range-body {
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
 }
 
@@ -1512,11 +1519,6 @@ button {
   .range-img-wrap {
     height: 260px;
     padding: 12px;
-  }
-
-  .featured-card .range-img-wrap {
-    min-height: 280px;
-    padding: 16px;
   }
 
   .featured-card .btn {
