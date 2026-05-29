@@ -1,29 +1,23 @@
 /* ============================================================
    LoveinHerb — main.js
    Dark mode toggle, sticky header, mobile nav, scroll reveals,
-   nav highlighting, WhatsApp share, form handler, product
-   carousel, image viewer
+   nav highlighting, WhatsApp share, form handler, image viewer
    ============================================================ */
-
 
 /* ── Dark mode ──────────────────────────────────────────────── */
 (function () {
   const toggle = document.querySelector('[data-theme-toggle]');
   const root = document.documentElement;
-  let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  let theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 
   function applyTheme(t) {
     root.setAttribute('data-theme', t);
 
     if (toggle) {
-      toggle.setAttribute(
-        'aria-label',
-        'Switch to ' + (t === 'dark' ? 'light' : 'dark') + ' mode'
-      );
-
+      toggle.setAttribute('aria-label', 'Switch to ' + (t === 'dark' ? 'light' : 'dark') + ' mode');
       toggle.innerHTML = t === 'dark'
-        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
-        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
     }
   }
 
@@ -37,7 +31,6 @@
   }
 })();
 
-
 /* ── Sticky header scroll effect ────────────────────────────── */
 (function () {
   const header = document.getElementById('header');
@@ -50,7 +43,6 @@
   updateHeader();
   window.addEventListener('scroll', updateHeader, { passive: true });
 })();
-
 
 /* ── Mobile navigation ──────────────────────────────────────── */
 (function () {
@@ -72,7 +64,7 @@
     mobileMenu.setAttribute('aria-hidden', String(!isOpen));
   });
 
-  mobileMenu.querySelectorAll('.mobile-link').forEach((link) => {
+  mobileMenu.querySelectorAll('.mobile-link').forEach(link => {
     link.addEventListener('click', closeMenu);
   });
 
@@ -87,24 +79,23 @@
   });
 })();
 
-
 /* ── Scroll reveal ──────────────────────────────────────────── */
 (function () {
   const revealEls = document.querySelectorAll(
-    '.benefit-card, .ingredient-item, .step-card, .section-header, .product-copy, .product-visual, .contact-copy, .contact-form, .range-card, .featured-card'
+    '.benefit-card, .ingredient-item, .step-card, .section-header, .product-copy, .product-visual, .contact-copy, .contact-form, .range-card'
   );
 
   if (!revealEls.length) return;
 
-  revealEls.forEach((el) => el.classList.add('reveal'));
+  revealEls.forEach(el => el.classList.add('reveal'));
 
   if (!('IntersectionObserver' in window)) {
-    revealEls.forEach((el) => el.classList.add('visible'));
+    revealEls.forEach(el => el.classList.add('visible'));
     return;
   }
 
   const io = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
         io.unobserve(entry.target);
@@ -112,9 +103,8 @@
     });
   }, { threshold: 0.12 });
 
-  revealEls.forEach((el) => io.observe(el));
+  revealEls.forEach(el => io.observe(el));
 })();
-
 
 /* ── Active nav link highlighting ───────────────────────────── */
 (function () {
@@ -123,10 +113,9 @@
   const mobileLinks = document.querySelectorAll('.mobile-menu a[href^="#"]');
 
   if (!sections.length) return;
-  if (!('IntersectionObserver' in window)) return;
 
   function clearActive(links) {
-    links.forEach((link) => {
+    links.forEach(link => {
       link.classList.remove('is-active');
       link.style.color = '';
       link.style.borderBottomColor = '';
@@ -154,9 +143,11 @@
     }
   }
 
+  if (!('IntersectionObserver' in window)) return;
+
   const io = new IntersectionObserver((entries) => {
     const visible = entries
-      .filter((entry) => entry.isIntersecting)
+      .filter(entry => entry.isIntersecting)
       .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
     if (visible.length) {
@@ -168,16 +159,14 @@
     rootMargin: '-20% 0px -45% 0px'
   });
 
-  sections.forEach((section) => io.observe(section));
+  sections.forEach(section => io.observe(section));
 })();
-
 
 /* ── Share button ───────────────────────────────────────────── */
 (function () {
   const shareBtn = document.getElementById('whatsappShareBtn');
   const mobileShareBtn = document.getElementById('mobileWhatsappShareBtn');
   const shareButtons = [shareBtn, mobileShareBtn].filter(Boolean);
-
   if (!shareButtons.length) return;
 
   async function handleShare(e) {
@@ -203,11 +192,10 @@
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   }
 
-  shareButtons.forEach((btn) => {
+  shareButtons.forEach(btn => {
     btn.addEventListener('click', handleShare);
   });
 })();
-
 
 /* ── Contact form ───────────────────────────────────────────── */
 (function () {
@@ -232,7 +220,7 @@
     if (message) waText += `\nMessage: ${message}`;
 
     btn.disabled = true;
-    btn.textContent = 'Opening WhatsApp...';
+    btn.textContent = 'Opening WhatsApp…';
 
     if (formMsg) {
       formMsg.textContent = 'Preparing your message...';
@@ -260,100 +248,6 @@
   });
 })();
 
-
-/* ── Product carousel ───────────────────────────────────────── */
-(function () {
-  const carousels = document.querySelectorAll('.product-carousel');
-  if (!carousels.length) return;
-
-  carousels.forEach((carousel) => {
-    const track = carousel.querySelector('.carousel-track');
-    const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
-    const prevBtn = carousel.querySelector('.carousel-arrow-prev');
-    const nextBtn = carousel.querySelector('.carousel-arrow-next');
-    const dots = Array.from(carousel.querySelectorAll('.carousel-dot'));
-    const thumbs = Array.from(carousel.querySelectorAll('.carousel-thumb'));
-
-    if (!track || !slides.length) return;
-
-    let currentIndex = 0;
-    let startX = 0;
-    let currentX = 0;
-    let isDragging = false;
-
-    function updateCarousel(index) {
-      currentIndex = (index + slides.length) % slides.length;
-      track.style.transform = `translateX(-${currentIndex * 100}%)`;
-
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('is-active', i === currentIndex);
-        dot.setAttribute('aria-current', i === currentIndex ? 'true' : 'false');
-      });
-
-      thumbs.forEach((thumb, i) => {
-        thumb.classList.toggle('is-active', i === currentIndex);
-        thumb.setAttribute('aria-current', i === currentIndex ? 'true' : 'false');
-      });
-    }
-
-    function nextSlide() {
-      updateCarousel(currentIndex + 1);
-    }
-
-    function prevSlide() {
-      updateCarousel(currentIndex - 1);
-    }
-
-    if (prevBtn) {
-      prevBtn.addEventListener('click', prevSlide);
-    }
-
-    if (nextBtn) {
-      nextBtn.addEventListener('click', nextSlide);
-    }
-
-    dots.forEach((dot, index) => {
-      dot.addEventListener('click', () => updateCarousel(index));
-    });
-
-    thumbs.forEach((thumb, index) => {
-      thumb.addEventListener('click', () => updateCarousel(index));
-    });
-
-    carousel.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight') nextSlide();
-      if (e.key === 'ArrowLeft') prevSlide();
-    });
-
-    track.addEventListener('touchstart', (e) => {
-      startX = e.touches[0].clientX;
-      isDragging = true;
-    }, { passive: true });
-
-    track.addEventListener('touchmove', (e) => {
-      if (!isDragging) return;
-      currentX = e.touches[0].clientX;
-    }, { passive: true });
-
-    track.addEventListener('touchend', () => {
-      if (!isDragging) return;
-
-      const diff = currentX - startX;
-      if (Math.abs(diff) > 40) {
-        if (diff < 0) nextSlide();
-        else prevSlide();
-      }
-
-      isDragging = false;
-      startX = 0;
-      currentX = 0;
-    });
-
-    updateCarousel(0);
-  });
-})();
-
-
 /* ── Product image viewer ───────────────────────────────────── */
 (function () {
   const imageViewer = document.getElementById('imageViewer');
@@ -363,7 +257,7 @@
   const zoomInBtn = document.getElementById('zoomInBtn');
   const zoomOutBtn = document.getElementById('zoomOutBtn');
   const zoomResetBtn = document.getElementById('zoomResetBtn');
-  const zoomableImages = document.querySelectorAll('.zoomable-img, .range-img');
+  const zoomableImages = document.querySelectorAll('.zoomable-img');
 
   if (!imageViewer || !viewerImage || !zoomableImages.length) return;
 
@@ -405,28 +299,20 @@
     img.style.cursor = 'zoom-in';
 
     img.addEventListener('click', () => {
-      const fullSrc = img.dataset.full || img.currentSrc || img.src;
+      const fullSrc = img.dataset.full || img.src;
       openImageViewer(fullSrc, img.alt);
     });
 
     img.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        const fullSrc = img.dataset.full || img.currentSrc || img.src;
+        const fullSrc = img.dataset.full || img.src;
         openImageViewer(fullSrc, img.alt);
       }
     });
 
     if (!img.hasAttribute('tabindex')) {
       img.setAttribute('tabindex', '0');
-    }
-
-    if (!img.hasAttribute('role')) {
-      img.setAttribute('role', 'button');
-    }
-
-    if (!img.hasAttribute('aria-label')) {
-      img.setAttribute('aria-label', img.alt ? `Open image: ${img.alt}` : 'Open product image');
     }
   });
 
@@ -468,19 +354,20 @@
   });
 
   document.addEventListener('keydown', (e) => {
-    if (!imageViewer.open) return;
-
     if (e.key === '+' || e.key === '=') {
+      if (!imageViewer.open) return;
       currentScale = Math.min(MAX_SCALE, currentScale + SCALE_STEP);
       updateViewerZoom();
     }
 
     if (e.key === '-') {
+      if (!imageViewer.open) return;
       currentScale = Math.max(MIN_SCALE, currentScale - SCALE_STEP);
       updateViewerZoom();
     }
 
     if (e.key === '0') {
+      if (!imageViewer.open) return;
       currentScale = 1;
       updateViewerZoom();
       resetViewerPosition();
