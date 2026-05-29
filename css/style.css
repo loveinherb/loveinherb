@@ -1641,6 +1641,11 @@ button {
   font-weight: 500;
 }
 
+.mrp-price {
+  color: #1565c0;
+  font-weight: 600;
+}
+
 .featured-card .range-ingredients,
 .range-ingredients {
   list-style: none;
