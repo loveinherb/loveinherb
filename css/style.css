@@ -1641,7 +1641,7 @@ button {
   font-weight: 500;
 }
 
-.mrp-price {
+.range-desc .mrp-price {
   color: #1565c0;
   font-weight: 600;
 }
