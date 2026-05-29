@@ -1,459 +1,950 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LoveinHerb | Natural Herbal Wellness Solutions</title>
-  <meta name="description" content="Explore LoveinHerb wellness solutions including WelAsoka Plus, Welcumn 365, We’easestone, Weldiaberry, and WelWagandha — crafted with natural ingredients for daily wellness." />
-  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&f[]=work-sans@300,400,500,600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
-  <meta name="google-site-verification" content="dT9NyKr-RMai6I4OFI05dP6M5e7ir1kWsefBZQLa7-o" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoveinHerb | Natural Herbal Wellness</title>
+  <meta
+    name="description"
+    content="LoveinHerb offers natural herbal wellness products crafted with traditional wisdom and carefully selected ingredients."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
 </head>
 <body>
+  <a class="sr-only" href="#main">Skip to content</a>
 
-  <!-- NAV -->
   <header class="header" id="header">
-    <nav class="nav container">
-      <a href="index.html" class="logo" aria-label="LoveinHerb home" style="display:flex;align-items:center;text-decoration:none;">
-        <img src="images/logo_navbar.png" alt="LoveinHerb Natural Wellness" style="height:75px;width:auto;display:block;"/>
-      </a>
-
-      <ul class="nav-links" role="list">
-        <li><a href="#product">Products</a></li>
-        <li><a href="#ingredients">Highlights</a></li>
-        <li><a href="#how-to">How to Use</a></li>
-        <li><a href="#contact">Order</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20know%20more%20about%20your%20products"
-           target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.882 0 0 0-3.48-8.413Z"/></svg>
-          Order on WhatsApp
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#home" class="logo" aria-label="LoveinHerb home">
+          <img src="images/logo.png" alt="LoveinHerb logo" />
         </a>
 
-        <a href="#" class="btn btn-whatsapp-share" id="whatsappShareBtn">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="18" cy="5" r="3"></circle>
-            <circle cx="6" cy="12" r="3"></circle>
-            <circle cx="18" cy="19" r="3"></circle>
-            <path d="M8.59 13.51 15.42 17.49"></path>
-            <path d="M15.41 6.51 8.59 10.49"></path>
-          </svg>
-          Share
-        </a>
+        <ul class="nav-links" role="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#ingredients">Ingredients</a></li>
+          <li><a href="#how-to-use">How to Use</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-        <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark mode">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        </button>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            type="button"
+            data-theme-toggle
+            aria-label="Toggle theme"
+          ></button>
 
-        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </nav>
+          <a
+            class="btn-whatsapp-share"
+            id="whatsappShareBtn"
+            href="#share"
+            aria-label="Share LoveinHerb"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 9l-5 3 5 3V9z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 12a8 8 0 1 1-2.34-5.66" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            Share
+          </a>
+
+          <a
+            class="btn-whatsapp"
+            href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20know%20more%20about%20your%20products."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.149-.198.297-.768.966-.941 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.133-.132.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.521.075-.793.372-.272.298-1.04 1.016-1.04 2.479 0 1.463 1.065 2.877 1.213 3.075.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.693.626.711.226 1.358.194 1.87.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+              <path d="M20.52 3.449A11.913 11.913 0 0 0 12.042 0C5.495 0 .159 5.336.157 11.883c0 2.095.547 4.141 1.588 5.945L0 24l6.335-1.661a11.86 11.86 0 0 0 5.705 1.453h.005c6.547 0 11.884-5.337 11.886-11.884a11.82 11.82 0 0 0-3.411-8.459zm-8.478 18.33h-.004a9.86 9.86 0 0 1-5.026-1.378l-.361-.214-3.761.987 1.004-3.667-.235-.376a9.86 9.86 0 0 1-1.51-5.248c.002-5.462 4.446-9.906 9.91-9.906a9.86 9.86 0 0 1 7.008 2.9 9.86 9.86 0 0 1 2.896 7.012c-.003 5.463-4.447 9.89-9.92 9.89z"/>
+            </svg>
+            WhatsApp
+          </a>
+
+          <button
+            class="nav-burger"
+            id="navBurger"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
 
     <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
       <ul role="list">
-        <li><a href="#product" class="mobile-link">Products</a></li>
-        <li><a href="#ingredients" class="mobile-link">Highlights</a></li>
-        <li><a href="#how-to" class="mobile-link">How to Use</a></li>
-        <li><a href="#contact" class="mobile-link">Order</a></li>
-        <li><a href="https://wa.me/919443059268" target="_blank" rel="noopener noreferrer" class="mobile-link mobile-wa">Order on WhatsApp</a></li>
-        <li><a href="#" class="mobile-link mobile-wa" id="mobileWhatsappShareBtn">Share on WhatsApp</a></li>
+        <li><a class="mobile-link" href="#home">Home</a></li>
+        <li><a class="mobile-link" href="#about">About</a></li>
+        <li><a class="mobile-link" href="#products">Products</a></li>
+        <li><a class="mobile-link" href="#ingredients">Ingredients</a></li>
+        <li><a class="mobile-link" href="#how-to-use">How to Use</a></li>
+        <li><a class="mobile-link" href="#contact">Contact</a></li>
+        <li>
+          <a
+            class="mobile-link mobile-wa"
+            href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20know%20more%20about%20your%20products."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Chat on WhatsApp
+          </a>
+        </li>
+        <li>
+          <a class="mobile-link" id="mobileWhatsappShareBtn" href="#share">
+            Share this page
+          </a>
+        </li>
       </ul>
     </div>
   </header>
 
-  <main>
-
-    <!-- HERO -->
+  <main id="main">
     <section class="hero" id="home">
-      <div class="hero-bg">
+      <div class="hero-bg" aria-hidden="true">
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-orb hero-orb-2"></div>
-      </div>
 
-      <div class="container hero-content">
-        <span class="badge">Natural wellness range · Crafted with herbs · Made with care</span>
-        <h1 class="hero-title">Infuse your water<br/><em>with wellness</em></h1>
-        <p class="hero-subtitle">Discover the LoveinHerb wellness range including Wel’easestone, WelAsoka Plus, Welcumn 365, Weldiaberry and WelWagandha — thoughtfully blended herbal wellness solutions for everyday living.</p>
-
-        <div class="hero-cta-group">
-          <a href="#product" class="btn btn-primary">Explore Products</a>
-          <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20know%20more%20about%20your%20wellness%20products" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.882 0 0 0-3.48-8.413Z"/></svg>
-            Order on WhatsApp
-          </a>
-        </div>
-
-        <div class="hero-trust">
-          <div class="trust-item"><span>✓</span> Herbal wellness solutions</div>
-          <div class="trust-item"><span>✓</span> Daily-use blends</div>
-          <div class="trust-item"><span>✓</span> Attractive family wellness range</div>
+        <div class="herb-pattern">
+          <svg class="leaf leaf-1" viewBox="0 0 64 64" fill="none">
+            <path d="M50 10C30 12 16 26 14 46c20-2 34-16 36-36Z" fill="currentColor" opacity="0.16"/>
+          </svg>
+          <svg class="leaf leaf-2" viewBox="0 0 64 64" fill="none">
+            <path d="M50 10C30 12 16 26 14 46c20-2 34-16 36-36Z" fill="currentColor" opacity="0.14"/>
+          </svg>
+          <svg class="leaf leaf-3" viewBox="0 0 64 64" fill="none">
+            <path d="M50 10C30 12 16 26 14 46c20-2 34-16 36-36Z" fill="currentColor" opacity="0.14"/>
+          </svg>
         </div>
       </div>
-    </section>
 
-    <!-- BRAND SHOWCASE -->
-    <section class="section product-section">
       <div class="container">
-        <div class="section-header centered" style="margin-bottom:2rem">
-          <p class="section-eyebrow">Brand Collection</p>
-          <h2 class="section-title">The LoveinHerb wellness family</h2>
-          <p style="color:var(--color-text-muted);max-width:700px;margin:0 auto;">Welcome to the LoveinHerb wellness family — a complete visual showcase of our current range, with each pack carrying its own clear role in women’s wellness, everyday balance, refreshing herbal hydration, antioxidant-inspired support and gentle vitality. From convenient pouches to family packs, every blend is crafted as a non-medicinal drinking water mix so you can build small, soothing rituals around hydration, digestion comfort and a naturally refreshed feeling throughout the day.</p>
-        </div>
+        <div class="hero-content">
+          <span class="badge hero-eyebrow">Natural Herbal Wellness</span>
+          <h1 class="hero-title">
+            Rooted in tradition, crafted for <em>everyday balance</em>
+          </h1>
+          <p class="hero-subtitle">
+            LoveinHerb brings together carefully selected herbal ingredients and traditional preparation methods to support a more natural wellness routine.
+          </p>
 
-        <div class="range-card" style="overflow:hidden;">
-          <div class="range-img-wrap" style="height:auto;padding:0;">
-            <img src="images/Main.jpg" alt="LoveinHerb wellness solutions product range" class="range-img zoomable-img" data-full="images/Main.jpg" style="width:100%;height:auto;object-fit:cover;" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRODUCTS -->
-    <section class="section product-section" id="product">
-      <div class="container">
-        <div class="section-header centered" style="margin-bottom:2.5rem">
-          <p class="section-eyebrow">Our Products</p>
-          <h2 class="section-title">Natural herbal wellness range</h2>
-          <p style="color:var(--color-text-muted);max-width:620px;margin:0 auto;">Each product carries its own herbal identity and benefit focus. The descriptions below are aligned with the names, ingredient cues, and visible product positioning shown on your final packaging images.</p>
-        </div>
-
-<!-- Main featured product -->
-<div class="featured-product">
-  <div class="featured-card">
-    <div class="range-img-wrap">
-      <img src="images/WhatsApp-Image-2026-05-27-at-11.16.19-AM5-6.jpg" alt="Wel’easestone pouch pack design" class="range-img zoomable-img" data-full="images/WhatsApp-Image-2026-05-27-at-11.16.19-AM5-6.jpg"/>
-    </div>
-
-    <div class="range-body">
-      <h3 class="range-name">Wel’easestone</h3>
-      <p class="range-tag">Herbal pouch blend</p>
-
-      <div class="range-desc">
-        <p>Wel’easestone is a herbal pouch blend prepared as a non-medicinal drinking water for everyday use. Its convenient sachet format makes it easy to prepare and suitable for regular wellness‑focused routines, helping you enjoy a light, refreshing and balanced herbal drink as part of your day. To be enjoyed warm or at room temperature, it’s designed to fit naturally into morning or evening rituals, offering a gentle way to pause, hydrate and reconnect with a calmer, more settled feeling.</p>
-
-        <p><strong>MRP:</strong> Rs. 410/- <span>Inclusive of all taxes</span></p>
-
-        <p><strong>Net weight:</strong> 21 grams <span>(7 sachets of 3 grams each)</span></p>
-
-        <p><strong>Ingredients:</strong><br>
-        <ul class="range-ingredients">
-        <li>Mountain Knotgrass</li>
-        <li>Caltrops</li>
-        <li>Horse Purslane Dried Root</li>
-        <li>Shaggy Buttonweed</li>
-      </ul>
-      </div>
-
-      <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20We%E2%80%99easestone" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Order on WhatsApp</a>
-    </div>
-  </div>
-</div>
-
-        <!-- Other 4 products -->
-        <div class="products-range-grid secondary-products">
-
-          <div class="range-card">
-  <div class="range-img-wrap">
-    <img src="images/welasoca-2.jpg" alt="WelAsoka Plus front and back pack design" class="range-img zoomable-img" data-full="images/welasoca-2.jpg"/>
-  </div>
-  <div class="range-body">
-    <h3 class="range-name">WelAsoka Plus</h3>
-    <p class="range-tag">Traditionally inspired blend for daily wellness</p>
-
-    <div class="range-desc">
-  <p>WelAsoka Plus is a non-medicinal drinking water mix inspired by traditional herbal wellness blends for everyday use. It is prepared as a convenient daily wellness blend with a carefully selected combination of herbal ingredients.</p>
-
-  <p><strong>MRP:</strong> Rs. 599/- <span>Inclusive of all taxes</span></p>
-
-  <p><strong>Net weight:</strong> 75 grams</p>
-
-  <p><strong>Ingredients:</strong></p>
-      <ul class="range-ingredients">
-      <li>Asoca Bark</li>
-      <li>Aswagandha Roots</li>
-      <li>Caltrops</li>
-      <li>Arjuna Bark</li>
-      <li>Mountain Knotgrass</li>
-      <li>Cumin Seeds</li>
-      <li>Cluster Bark</li>
-    </ul>
-    </div>
-
-    <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20WelAsoka%20Plus" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Order on WhatsApp</a>
-  </div>
-</div>
-
-      <div class="range-card">
-  <div class="range-img-wrap">
-    <img src="images/welcumn365-3.jpg" alt="Welcumn 365 front and back pack design" class="range-img zoomable-img" data-full="images/welcumn365-3.jpg"/>
-  </div>
-  <div class="range-body">
-    <h3 class="range-name">Welcumn 365</h3>
-    <p class="range-tag">Family Pack · Daily wellness</p>
-    <div class="range-desc">
-      <p>A non-medicinal drinking water mix with goodness of 7 natural ingredients. Taken as part of your daily routine, it helps you feel lighter and more refreshed, supporting comfortable digestion and everyday wellness without artificial flavours or preservatives.</p>
-
-      <p><strong>MRP:</strong> <span>Rs. 410/- inclusive of all taxes.</span></p>
-
-      <p><strong>Net weight:</strong> <span>75 grams.</span></p>
-
-      <p><strong>Ingredients:</strong></p>
-      <ul class="range-ingredients">
-        <li>Cumin Seeds</li>
-        <li>Horse Purslane Dried Roots</li>
-        <li>Cuscus Roots</li>
-        <li>Indian Sarsaparilla Roots</li>
-        <li>Mountain Knotgrass</li>
-        <li>Caltrops</li>
-    </ul>
-    </div>
-    
-    <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20Welcumn%20365" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Order on WhatsApp</a>
-  </div>
-</div>
-
-          <div class="range-card">
-  <div class="range-img-wrap">
-    <img src="images/weldiaberry-4.jpg" alt="Weldiaberry front and back pack design" class="range-img zoomable-img" data-full="images/weldiaberry-4.jpg"/>
-  </div>
-  <div class="range-body">
-    <h3 class="range-name">Weldiaberry</h3>
-    <p class="range-tag">Berry-inspired · Daily wellness</p>
-    <div class="range-desc">
-      <p>Weldiaberry is a berry-inspired non-medicinal drinking water mix that blends cumin, herbs, and Indian blackberry seeds to gently support daily wellness, comfortable digestion, and a light, refreshed feeling when enjoyed as part of your regular routine.</p>
-
-      <p><strong>MRP:</strong> <span>Rs. 599/- inclusive of all taxes.</span></p>
-
-      <p><strong>Net weight:</strong> <span>75 grams.</span></p>
-
-      <p><strong>Ingredients:</strong></p>
-    <ul class="range-ingredients">
-      <li>Cumin Seeds</li>
-      <li>Horse Purslane Dried Roots</li>
-      <li>Cuscus Roots</li>
-      <li>Indian Blackberry Seeds</li>
-      <li>Dry Ginger</li>
-      <li>Mountain Knotgrass</li>
-      <li>Caltrops</li>
-    </ul>
-    </div>
-
-    <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20Weldiaberry" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Order on WhatsApp</a>
-  </div>
-</div>
-
-          <div class="range-card">
-          <div class="range-img-wrap">
-            <img src="images/welwagandha-5.jpg" alt="WelWagandha front and back pack design" class="range-img zoomable-img" data-full="images/welwagandha-5.jpg"/>
-          </div>
-          <div class="range-body">
-            <h3 class="range-name">WelWagandha</h3>
-            <p class="range-tag">Vitality and holistic wellness</p>
-            <div class="range-desc">
-              <p>WelWagandha is a rejuvenating 7-herb non-medicinal drinking water mix that brings together Aswagandha and other traditional herbs to help you feel more balanced, refreshed and supported in your daily wellness routine.</p>
-              <p><strong>MRP:</strong> <span>Rs. 599/- inclusive of all taxes.</span></p>
-              <p><strong>Net weight:</strong> <span>75 grams.</span></p>
-
-              <p><strong>Ingredients:</strong></p>
-            <ul class="range-ingredients">
-              <li>Aswagandha</li>
-              <li>Cowhage Seeds</li>
-              <li>Black Museli</li>
-              <li>Cumin Seeds</li>
-              <li>Horse Purslane Dried Root</li>
-              <li>Caltrops</li>
-              <li>Mountain Knotgrass</li>
-            </ul>
-            </div>
-
-            <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20WelWagandha" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Order on WhatsApp</a>
-          </div>
-        </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- HIGHLIGHTS -->
-    <section class="section benefits-section" id="ingredients">
-      <div class="container">
-        <div class="section-header centered">
-          <p class="section-eyebrow">Highlights</p>
-          <h2 class="section-title">What the packaging communicates</h2>
-        </div>
-
-        <div class="benefits-grid">
-          <div class="benefit-card reveal">
-            <div class="benefit-icon">🌿</div>
-            <h3>Herbal identity</h3>
-            <p>Across the range, the packaging consistently communicates natural ingredients, herbal preparation, and a wellness-led product story.</p>
-          </div>
-
-          <div class="benefit-card reveal">
-            <div class="benefit-icon">💧</div>
-            <h3>Drinking water mixes</h3>
-            <p>Each pack is positioned as a non-medicinal drinking water mix, with preparation steps visible on the rear or front panels of the final designs.</p>
-          </div>
-
-          <div class="benefit-card reveal">
-            <div class="benefit-icon">✨</div>
-            <h3>Distinct product personalities</h3>
-            <p>Pink tones support WelAsoka Plus, berry-purple supports Weldiaberry, golden wellness cues support Welcumn 365 and WelWagandha, and the pouch creates a separate identity for We’easestone.</p>
-          </div>
-
-          <div class="benefit-card reveal">
-            <div class="benefit-icon">📦</div>
-            <h3>Attractive presentation</h3>
-            <p>The family-range group image adds trust and polish to the brand because it shows the full collection together in a coordinated lifestyle setting.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- HOW TO USE -->
-    <section class="section howto-section" id="how-to">
-      <div class="container">
-        <div class="section-header centered">
-          <p class="section-eyebrow">Simple Preparation</p>
-          <h2 class="section-title">Easy to prepare</h2>
-        </div>
-
-        <div class="steps-grid">
-          <div class="step-card reveal">
-            <div class="step-num">1</div>
-            <h3>Add to water</h3>
-            <p>The packs generally instruct adding the product to about <strong>3 litres</strong> of water.</p>
-          </div>
-
-          <div class="step-arrow">→</div>
-
-          <div class="step-card reveal">
-            <div class="step-num">2</div>
-            <h3>Boil gently</h3>
-            <p>Most visible preparation panels recommend boiling for about <strong>2–3 minutes</strong> and allowing it to settle.</p>
-          </div>
-
-          <div class="step-arrow">→</div>
-
-          <div class="step-card reveal">
-            <div class="step-num">3</div>
-            <h3>Use the same day</h3>
-            <p>The packaging indicates the prepared drink should be consumed on the <strong>same day</strong> of preparation.</p>
-          </div>
-        </div>
-
-        <div class="howto-note">
-          <span>ℹ The product labels present these as non-medicinal drinking water mixes and include the note that they are not intended to diagnose, treat, cure, or prevent disease.</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section contact-section" id="contact">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-copy reveal">
-            <p class="section-eyebrow">Get in Touch</p>
-            <h2 class="section-title">Order LoveinHerb products</h2>
-            <p>Contact LoveinHerb directly on WhatsApp to order WelAsoka Plus, Welcumn 365, We’easestone, Weldiaberry, or WelWagandha.</p>
-
-            <div class="contact-details">
-              <div class="contact-item"><span>📞</span><div><strong>Customer Care</strong><a href="tel:+919443059268">+91 94430 59268</a></div></div>
-              <div class="contact-item"><span>✉️</span><div><strong>Email</strong><a href="mailto:care@loveinherb.com">care@loveinherb.com</a></div></div>
-              <div class="contact-item"><span>📍</span><div><strong>Address</strong><span>13/892 NH 544, Kanjikode, Palakkad, Kerala 678 621</span></div></div>
-              <div class="contact-item"><span>💬</span><div><strong>WhatsApp</strong><span>Quick response for product enquiries and orders</span></div></div>
-            </div>
-
-            <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20order%20your%20wellness%20products" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg" style="margin-top:1.5rem">
-              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.882 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.882 0 0 0-3.48-8.413Z"/></svg>
+          <div class="hero-cta-group">
+            <a class="btn btn-primary btn-lg" href="#products">Explore Products</a>
+            <a
+              class="btn-whatsapp btn-lg"
+              href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20know%20more%20about%20your%20products."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Order on WhatsApp
             </a>
           </div>
 
+          <div class="hero-trust">
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4Z" stroke="currentColor" stroke-width="1.8"/>
+              </svg>
+              <span>Carefully selected ingredients</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <span>Traditional herbal wisdom</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m5 13 4 4L19 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Simple to order via WhatsApp</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="section product-section" id="about">
+      <div class="container">
+        <div class="product-grid">
+          <div class="product-copy">
+            <span class="section-eyebrow">About LoveinHerb</span>
+            <h2 class="section-title">Herbal care inspired by nature and tradition</h2>
+            <p class="product-desc">
+              We believe wellness should feel grounded, natural, and accessible. LoveinHerb products are prepared with attention to ingredient quality, traditional knowledge, and everyday usefulness.
+            </p>
+
+            <ul class="product-feature-list">
+              <li>
+                <span class="feat-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 3c2.5 3 4 5.5 4 8a4 4 0 1 1-8 0c0-2.5 1.5-5 4-8Z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </span>
+                Carefully selected herbal ingredients
+              </li>
+              <li>
+                <span class="feat-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M4 20c8 0 16-8 16-16-8 0-16 8-16 16Z" stroke="currentColor" stroke-width="1.8"/>
+                  </svg>
+                </span>
+                Traditional preparation approach
+              </li>
+              <li>
+                <span class="feat-icon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M5 12h14M12 5v14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </span>
+                Designed for daily wellness routines
+              </li>
+            </ul>
+
+            <a class="btn btn-primary" href="#contact">Contact Us</a>
+          </div>
+
+          <div class="product-visual">
+            <div class="product-card-outer">
+              <div class="product-card">
+                <div class="product-glow"></div>
+                <img
+                  src="images/hero-product.png"
+                  alt="LoveinHerb herbal product"
+                  class="product-svg"
+                  loading="lazy"
+                  width="700"
+                  height="900"
+                />
+              </div>
+              <div class="product-meta-pill">
+                <span>Trusted herbal care</span>
+                <span class="pill-dot"></span>
+                <span>Natural wellness</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section benefits-section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-eyebrow">Why Choose Us</span>
+          <h2 class="section-title">A more natural way to support wellbeing</h2>
+          <p class="section-lead">
+            Our approach combines traditional herbal understanding with practical daily use.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon">🌿</div>
+            <h3>Nature-led</h3>
+            <p>Products shaped by herbal traditions and ingredient awareness.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">🫶</div>
+            <h3>Daily-friendly</h3>
+            <p>Made to fit into simple, consistent wellness routines.</p>
+          </article>
+
+          <article class="benefit-card">
+            <div class="benefit-icon">✨</div>
+            <h3>Carefully prepared</h3>
+            <p>Focused on balance, clarity, and dependable herbal support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section product-range-section" id="products">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-eyebrow">Our Herbal Range</span>
+          <h2 class="section-title">Discover the LoveinHerb collection</h2>
+          <p class="section-lead">
+            Explore our featured product and the wider range of herbal wellness solutions.
+          </p>
+        </div>
+
+        <div class="featured-product">
+          <article class="featured-card">
+            <div class="range-img-wrap">
+              <div class="product-carousel" data-carousel>
+                <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous image" data-carousel-prev>
+                  &#10094;
+                </button>
+
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide is-active">
+                      <img
+                        src="images/wel-easestone-1.png"
+                        alt="Wel’easestone herbal product front view"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-easestone-1.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                    <div class="carousel-slide">
+                      <img
+                        src="images/wel-easestone-2.png"
+                        alt="Wel’easestone herbal product side view"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-easestone-2.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                    <div class="carousel-slide">
+                      <img
+                        src="images/wel-easestone-3.png"
+                        alt="Wel’easestone herbal product back label"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-easestone-3.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next image" data-carousel-next>
+                  &#10095;
+                </button>
+
+                <div class="carousel-dots" role="tablist" aria-label="Wel’easestone product images">
+                  <button type="button" class="carousel-dot is-active" aria-label="Go to image 1" data-carousel-dot="0"></button>
+                  <button type="button" class="carousel-dot" aria-label="Go to image 2" data-carousel-dot="1"></button>
+                  <button type="button" class="carousel-dot" aria-label="Go to image 3" data-carousel-dot="2"></button>
+                </div>
+
+                <div class="carousel-thumbs">
+                  <button type="button" class="carousel-thumb is-active" data-carousel-thumb="0" aria-label="View image 1">
+                    <img src="images/wel-easestone-1.png" alt="Wel’easestone thumbnail 1" loading="lazy" width="120" height="120" />
+                  </button>
+                  <button type="button" class="carousel-thumb" data-carousel-thumb="1" aria-label="View image 2">
+                    <img src="images/wel-easestone-2.png" alt="Wel’easestone thumbnail 2" loading="lazy" width="120" height="120" />
+                  </button>
+                  <button type="button" class="carousel-thumb" data-carousel-thumb="2" aria-label="View image 3">
+                    <img src="images/wel-easestone-3.png" alt="Wel’easestone thumbnail 3" loading="lazy" width="120" height="120" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="range-body">
+              <h3 class="range-name">Wel’easestone</h3>
+              <p class="range-tag">Featured Product</p>
+
+              <div class="range-desc">
+                <p><strong>Purpose:</strong> <span>Herbal wellness support for a balanced daily routine.</span></p>
+                <p><strong>Profile:</strong> <span>Prepared with carefully selected ingredients and traditional care.</span></p>
+              </div>
+
+              <ul class="range-ingredients">
+                <li>Traditional Blend</li>
+                <li>Natural Support</li>
+                <li>Daily Wellness</li>
+                <li>Herbal Care</li>
+              </ul>
+
+              <a
+                class="btn-whatsapp order-btn"
+                href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20order%20Wel’easestone."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Order on WhatsApp
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="secondary-products products-range-grid">
+          <article class="range-card">
+            <div class="range-img-wrap">
+              <div class="product-carousel" data-carousel>
+                <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous image" data-carousel-prev>
+                  &#10094;
+                </button>
+
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide is-active">
+                      <img
+                        src="images/wel-amukkara-1.png"
+                        alt="Wel’amukkara product image 1"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-amukkara-1.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                    <div class="carousel-slide">
+                      <img
+                        src="images/wel-amukkara-2.png"
+                        alt="Wel’amukkara product image 2"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-amukkara-2.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next image" data-carousel-next>
+                  &#10095;
+                </button>
+
+                <div class="carousel-dots" role="tablist" aria-label="Wel’amukkara product images">
+                  <button type="button" class="carousel-dot is-active" aria-label="Go to image 1" data-carousel-dot="0"></button>
+                  <button type="button" class="carousel-dot" aria-label="Go to image 2" data-carousel-dot="1"></button>
+                </div>
+
+                <div class="carousel-thumbs">
+                  <button type="button" class="carousel-thumb is-active" data-carousel-thumb="0" aria-label="View image 1">
+                    <img src="images/wel-amukkara-1.png" alt="Wel’amukkara thumbnail 1" loading="lazy" width="120" height="120" />
+                  </button>
+                  <button type="button" class="carousel-thumb" data-carousel-thumb="1" aria-label="View image 2">
+                    <img src="images/wel-amukkara-2.png" alt="Wel’amukkara thumbnail 2" loading="lazy" width="120" height="120" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="range-body">
+              <h3 class="range-name">Wel’amukkara</h3>
+              <p class="range-tag">Herbal Support</p>
+              <div class="range-desc">
+                <p><strong>Purpose:</strong> <span>Traditional herbal support prepared for daily care.</span></p>
+              </div>
+              <ul class="range-ingredients">
+                <li>Natural Herbs</li>
+                <li>Traditional Care</li>
+              </ul>
+              <a
+                class="btn-whatsapp order-btn"
+                href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20order%20Wel’amukkara."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Order on WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <article class="range-card">
+            <div class="range-img-wrap">
+              <div class="product-carousel" data-carousel>
+                <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous image" data-carousel-prev>
+                  &#10094;
+                </button>
+
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide is-active">
+                      <img
+                        src="images/wel-neermulli-1.png"
+                        alt="Wel’neermulli product image 1"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-neermulli-1.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                    <div class="carousel-slide">
+                      <img
+                        src="images/wel-neermulli-2.png"
+                        alt="Wel’neermulli product image 2"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-neermulli-2.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next image" data-carousel-next>
+                  &#10095;
+                </button>
+
+                <div class="carousel-dots" role="tablist" aria-label="Wel’neermulli product images">
+                  <button type="button" class="carousel-dot is-active" aria-label="Go to image 1" data-carousel-dot="0"></button>
+                  <button type="button" class="carousel-dot" aria-label="Go to image 2" data-carousel-dot="1"></button>
+                </div>
+
+                <div class="carousel-thumbs">
+                  <button type="button" class="carousel-thumb is-active" data-carousel-thumb="0" aria-label="View image 1">
+                    <img src="images/wel-neermulli-1.png" alt="Wel’neermulli thumbnail 1" loading="lazy" width="120" height="120" />
+                  </button>
+                  <button type="button" class="carousel-thumb" data-carousel-thumb="1" aria-label="View image 2">
+                    <img src="images/wel-neermulli-2.png" alt="Wel’neermulli thumbnail 2" loading="lazy" width="120" height="120" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="range-body">
+              <h3 class="range-name">Wel’neermulli</h3>
+              <p class="range-tag">Herbal Formula</p>
+              <div class="range-desc">
+                <p><strong>Purpose:</strong> <span>Prepared to support a simple herbal wellness routine.</span></p>
+              </div>
+              <ul class="range-ingredients">
+                <li>Traditional Blend</li>
+                <li>Natural Care</li>
+              </ul>
+              <a
+                class="btn-whatsapp order-btn"
+                href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20order%20Wel’neermulli."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Order on WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <article class="range-card">
+            <div class="range-img-wrap">
+              <div class="product-carousel" data-carousel>
+                <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous image" data-carousel-prev>
+                  &#10094;
+                </button>
+
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide is-active">
+                      <img
+                        src="images/wel-sirupeelai-1.png"
+                        alt="Wel’sirupeelai product image 1"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-sirupeelai-1.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                    <div class="carousel-slide">
+                      <img
+                        src="images/wel-sirupeelai-2.png"
+                        alt="Wel’sirupeelai product image 2"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-sirupeelai-2.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next image" data-carousel-next>
+                  &#10095;
+                </button>
+
+                <div class="carousel-dots" role="tablist" aria-label="Wel’sirupeelai product images">
+                  <button type="button" class="carousel-dot is-active" aria-label="Go to image 1" data-carousel-dot="0"></button>
+                  <button type="button" class="carousel-dot" aria-label="Go to image 2" data-carousel-dot="1"></button>
+                </div>
+
+                <div class="carousel-thumbs">
+                  <button type="button" class="carousel-thumb is-active" data-carousel-thumb="0" aria-label="View image 1">
+                    <img src="images/wel-sirupeelai-1.png" alt="Wel’sirupeelai thumbnail 1" loading="lazy" width="120" height="120" />
+                  </button>
+                  <button type="button" class="carousel-thumb" data-carousel-thumb="1" aria-label="View image 2">
+                    <img src="images/wel-sirupeelai-2.png" alt="Wel’sirupeelai thumbnail 2" loading="lazy" width="120" height="120" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="range-body">
+              <h3 class="range-name">Wel’sirupeelai</h3>
+              <p class="range-tag">Herbal Blend</p>
+              <div class="range-desc">
+                <p><strong>Purpose:</strong> <span>Crafted with traditional herbal preparation and care.</span></p>
+              </div>
+              <ul class="range-ingredients">
+                <li>Herbal Mix</li>
+                <li>Natural Support</li>
+              </ul>
+              <a
+                class="btn-whatsapp order-btn"
+                href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20order%20Wel’sirupeelai."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Order on WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <article class="range-card">
+            <div class="range-img-wrap">
+              <div class="product-carousel" data-carousel>
+                <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous image" data-carousel-prev>
+                  &#10094;
+                </button>
+
+                <div class="carousel-viewport">
+                  <div class="carousel-track">
+                    <div class="carousel-slide is-active">
+                      <img
+                        src="images/wel-nerunjil-1.png"
+                        alt="Wel’nerunjil product image 1"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-nerunjil-1.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                    <div class="carousel-slide">
+                      <img
+                        src="images/wel-nerunjil-2.png"
+                        alt="Wel’nerunjil product image 2"
+                        class="range-img zoomable-img"
+                        data-full="images/wel-nerunjil-2.png"
+                        loading="lazy"
+                        width="900"
+                        height="900"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next image" data-carousel-next>
+                  &#10095;
+                </button>
+
+                <div class="carousel-dots" role="tablist" aria-label="Wel’nerunjil product images">
+                  <button type="button" class="carousel-dot is-active" aria-label="Go to image 1" data-carousel-dot="0"></button>
+                  <button type="button" class="carousel-dot" aria-label="Go to image 2" data-carousel-dot="1"></button>
+                </div>
+
+                <div class="carousel-thumbs">
+                  <button type="button" class="carousel-thumb is-active" data-carousel-thumb="0" aria-label="View image 1">
+                    <img src="images/wel-nerunjil-1.png" alt="Wel’nerunjil thumbnail 1" loading="lazy" width="120" height="120" />
+                  </button>
+                  <button type="button" class="carousel-thumb" data-carousel-thumb="1" aria-label="View image 2">
+                    <img src="images/wel-nerunjil-2.png" alt="Wel’nerunjil thumbnail 2" loading="lazy" width="120" height="120" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="range-body">
+              <h3 class="range-name">Wel’nerunjil</h3>
+              <p class="range-tag">Traditional Wellness</p>
+              <div class="range-desc">
+                <p><strong>Purpose:</strong> <span>A herbal product prepared for natural daily support.</span></p>
+              </div>
+              <ul class="range-ingredients">
+                <li>Traditional Herbs</li>
+                <li>Wellness Support</li>
+              </ul>
+              <a
+                class="btn-whatsapp order-btn"
+                href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20want%20to%20order%20Wel’nerunjil."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Order on WhatsApp
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ingredients-section" id="ingredients">
+      <div class="container">
+        <div class="ingredients-layout">
+          <div>
+            <span class="section-eyebrow">Ingredients</span>
+            <h2 class="section-title">Selected with care and purpose</h2>
+            <p class="ingredients-intro">
+              LoveinHerb products are prepared from thoughtfully chosen herbal ingredients that reflect traditional usage and natural wellness values.
+            </p>
+          </div>
+
+          <div class="ingredients-cards">
+            <article class="ingredient-item" style="--delay: 0ms;">
+              <div class="ingredient-num">01</div>
+              <div class="ingredient-info">
+                <h3>Traditional herbal roots</h3>
+                <p>Used in long-standing wellness practices for everyday support and balance.</p>
+              </div>
+            </article>
+
+            <article class="ingredient-item" style="--delay: 80ms;">
+              <div class="ingredient-num">02</div>
+              <div class="ingredient-info">
+                <h3>Natural preparation focus</h3>
+                <p>Handled with care to preserve the value and simplicity of herbal use.</p>
+              </div>
+            </article>
+
+            <article class="ingredient-item" style="--delay: 160ms;">
+              <div class="ingredient-num">03</div>
+              <div class="ingredient-info">
+                <h3>Balanced combinations</h3>
+                <p>Prepared as blends that fit easily into regular wellness routines.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section howto-section" id="how-to-use">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="section-eyebrow">How to Use</span>
+          <h2 class="section-title">Simple steps to begin</h2>
+          <p class="section-lead">
+            Starting your herbal routine can be easy when the process is clear and consistent.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-num">1</div>
+            <div class="step-icon">📩</div>
+            <h3>Choose your product</h3>
+            <p>Browse the range and select the product that fits your interest.</p>
+          </article>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <article class="step-card">
+            <div class="step-num">2</div>
+            <div class="step-icon">💬</div>
+            <h3>Message on WhatsApp</h3>
+            <p>Contact LoveinHerb directly for product details and ordering.</p>
+          </article>
+
+          <div class="step-arrow" aria-hidden="true">→</div>
+
+          <article class="step-card">
+            <div class="step-num">3</div>
+            <div class="step-icon">🌿</div>
+            <h3>Begin your routine</h3>
+            <p>Use consistently as advised for a natural wellness journey.</p>
+          </article>
+        </div>
+
+        <div class="howto-note">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 8v5m0 4h.01M10.3 3.86l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3.14l-8-14a2 2 0 0 0-3.4 0Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span>
+            For product-specific guidance, please confirm details directly through WhatsApp before use.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="container">
+        <div class="cta-inner">
+          <div>
+            <h2>Ready to explore herbal wellness?</h2>
+            <p>Connect with LoveinHerb directly and place your order with ease.</p>
+          </div>
+
+          <div class="cta-actions">
+            <a
+              class="btn-whatsapp btn-lg"
+              href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20would%20like%20to%20order%20your%20products."
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Order Now
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#contact">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <span class="section-eyebrow">Contact</span>
+            <h2 class="section-title">Let’s connect</h2>
+            <p>
+              Reach out for product information, ordering help, or general questions about the LoveinHerb range.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item whatsapp-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.149-.198.297-.768.966-.941 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.133-.132.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.521.075-.793.372-.272.298-1.04 1.016-1.04 2.479 0 1.463 1.065 2.877 1.213 3.075.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.693.626.711.226 1.358.194 1.87.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                </svg>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="https://wa.me/919443059268" target="_blank" rel="noopener noreferrer">
+                    +91 94430 59268
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:loveinherb@example.com">loveinherb@example.com</a>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-4.35 7-11a7 7 0 1 0-14 0c0 6.65 7 11 7 11Z" stroke="currentColor" stroke-width="1.8"/>
+                  <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                </svg>
+                <div>
+                  <strong>Location</strong>
+                  <span>Tamil Nadu, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <form class="contact-form" id="contactForm">
-            <h3>Send a Message</h3>
-            <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="e.g. Riya Sharma" required/></div>
-            <div class="form-group"><label for="phone">Phone / WhatsApp</label><input type="tel" id="phone" name="phone" placeholder="+91 98765 43210"/></div>
-            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="4" placeholder="I'd like to know more about your product range..." required></textarea></div>
-            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-            <p class="form-note" id="formMsg"></p>
+            <h3>Send a WhatsApp message</h3>
+
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us which product you’re interested in"></textarea>
+            </div>
+
+            <button class="btn btn-primary btn-full" type="submit">Send via WhatsApp</button>
+            <p class="form-note" id="formMsg" aria-live="polite"></p>
           </form>
         </div>
       </div>
     </section>
-
-    <!-- CTA BANNER -->
-    <section class="cta-banner">
-      <div class="container cta-inner">
-        <div>
-          <h2>Ready to explore the full range?</h2>
-          <p>Connect with LoveinHerb and choose the product that fits your daily wellness needs.</p>
-        </div>
-        <div class="cta-actions">
-          <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20explore%20your%20wellness%20range" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-lg">Order on WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <div class="footer-brand">
-        <p style="font-family:var(--font-display);font-size:1.3rem;font-weight:700;color:white;">LoveinHerb</p>
-        <p class="footer-tagline">Carefully crafted with nature’s finest, for your daily wellness.</p>
+      <div>
+        <a href="#home" class="logo footer-logo" aria-label="LoveinHerb home">
+          <img src="images/logo-footer.png" alt="LoveinHerb footer logo" />
+        </a>
+        <p class="footer-tagline">
+          Herbal wellness inspired by nature, care, and traditional knowledge.
+        </p>
       </div>
 
       <div class="footer-links">
-        <nav>
+        <nav aria-label="Footer navigation">
           <ul role="list">
-            <li><a href="#product">Products</a></li>
-            <li><a href="#ingredients">Highlights</a></li>
-            <li><a href="#how-to">How to Use</a></li>
-            <li><a href="#contact">Order</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#ingredients">Ingredients</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="footer-info">
-        <p>13/892 NH 544, Kanjikode, Palakkad, Kerala 678 621</p>
-        <p><a href="tel:+919443059268">+91 94430 59268</a></p>
-        <p><a href="mailto:care@loveinherb.com">care@loveinherb.com</a></p>
-        <p class="footer-fssai">LoveinHerb Wellness Solutions</p>
+        <p>WhatsApp: <a href="https://wa.me/919443059268" target="_blank" rel="noopener noreferrer">+91 94430 59268</a></p>
+        <p>Email: <a href="mailto:loveinherb@example.com">loveinherb@example.com</a></p>
+        <p class="footer-fssai">Natural herbal wellness range</p>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="container">
-        <p>&copy; 2026 LoveinHerb Natural Wellness Solutions. All rights reserved.</p>
-        <p>The visible product labels describe the range as non-medicinal drinking water mixes.</p>
+        <p>&copy; 2026 LoveinHerb. All rights reserved.</p>
+        <p>Crafted with care for natural wellness.</p>
       </div>
     </div>
   </footer>
 
-  <!-- WhatsApp float -->
-  <a href="https://wa.me/919443059268?text=Hi%20LoveinHerb%2C%20I%20want%20to%20know%20more%20about%20your%20products" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Order on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.882 0 0 0-3.48-8.413Z"/></svg>
+  <a
+    class="wa-float"
+    href="https://wa.me/919443059268?text=Hi%20LoveinHerb!%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.149-.198.297-.768.966-.941 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.133-.132.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.521.075-.793.372-.272.298-1.04 1.016-1.04 2.479 0 1.463 1.065 2.877 1.213 3.075.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.693.626.711.226 1.358.194 1.87.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M20.52 3.449A11.913 11.913 0 0 0 12.042 0C5.495 0 .159 5.336.157 11.883c0 2.095.547 4.141 1.588 5.945L0 24l6.335-1.661a11.86 11.86 0 0 0 5.705 1.453h.005c6.547 0 11.884-5.337 11.886-11.884a11.82 11.82 0 0 0-3.411-8.459zm-8.478 18.33h-.004a9.86 9.86 0 0 1-5.026-1.378l-.361-.214-3.761.987 1.004-3.667-.235-.376a9.86 9.86 0 0 1-1.51-5.248c.002-5.462 4.446-9.906 9.91-9.906a9.86 9.86 0 0 1 7.008 2.9 9.86 9.86 0 0 1 2.896 7.012c-.003 5.463-4.447 9.89-9.92 9.89z"/>
+    </svg>
   </a>
 
-  <!-- Image Viewer -->
-  <dialog class="image-viewer" id="imageViewer" aria-label="Product image viewer">
+  <dialog class="image-viewer" id="imageViewer" aria-label="Expanded product image viewer">
     <div class="image-viewer__topbar">
-      <button type="button" class="viewer-btn" id="zoomOutBtn" aria-label="Zoom out">−</button>
-      <button type="button" class="viewer-btn" id="zoomInBtn" aria-label="Zoom in">+</button>
-      <button type="button" class="viewer-btn" id="zoomResetBtn" aria-label="Reset zoom">Reset</button>
-      <button type="button" class="viewer-btn viewer-close" id="closeViewerBtn" aria-label="Close image viewer">✕</button>
+      <button class="viewer-btn" id="zoomOutBtn" type="button" aria-label="Zoom out">−</button>
+      <button class="viewer-btn" id="zoomResetBtn" type="button" aria-label="Reset zoom">100%</button>
+      <button class="viewer-btn" id="zoomInBtn" type="button" aria-label="Zoom in">+</button>
+      <button class="viewer-btn viewer-close" id="closeViewerBtn" type="button" aria-label="Close image viewer">
+        Close
+      </button>
     </div>
+
     <div class="image-viewer__stage" id="imageViewerStage">
       <img id="viewerImage" src="" alt="Expanded product image" />
     </div>
   </dialog>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
