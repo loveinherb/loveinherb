@@ -1359,7 +1359,7 @@ button {
 
 .featured-card .range-desc p {
   font-size: 0.92rem;
-  color: var(--color-text-muted);
+  color: var(--color-text);
   line-height: 1.6;
   margin: 0 0 0.45rem;
   max-width: 100%;
