@@ -1353,11 +1353,29 @@ button {
 }
 
 .featured-card .range-desc {
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.featured-card .range-desc p {
   font-size: 0.9rem;
   color: var(--color-text-muted);
   line-height: 1.6;
-  margin-bottom: 1rem;
+  margin: 0 0 0.45rem;
   max-width: 100%;
+}
+
+.featured-card .range-desc p:last-child {
+  margin-bottom: 0;
+}
+
+.featured-card .range-desc strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.featured-card .range-desc span {
+  color: var(--color-text-faint);
 }
 
 .featured-card .range-ingredients {
